@@ -1,0 +1,8 @@
+if choco installed:
+    do stuff
+if choco not installed:
+    install choco
+    if choco installed:
+        do stuff
+    if choco not installed:
+        stop

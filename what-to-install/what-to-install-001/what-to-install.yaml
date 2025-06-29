@@ -1,0 +1,29 @@
+install:
+  programs to install:
+    - PowerShell 7
+    - VS code
+    - 7 zip
+    - Voidtools everything
+    - WinSCP
+    - MobaXTerm
+    - Go
+    - Notepad++
+    - SQLiteBrowser
+  logs:
+    global log directory: |
+      C:\logs
+    per app log directories:
+      cherry tree: |
+        cherry-tree
+  downloads:
+    global download directory: |
+      C:\downloads
+    per app download directories:
+      cherry tree: |
+        cherry-tree
+      Python:
+        miniconda
+      SQL Developer:
+        sql-developer
+      Nirsoft:
+        nirsoft

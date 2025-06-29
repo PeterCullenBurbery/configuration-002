@@ -1,0 +1,128 @@
+install:
+  automatically installed:
+    choco:
+      name: |
+        choco
+      alternatives:
+        - choco
+        - chocolatey
+  winget:
+    Powershell 7:
+      name: |
+        Powershell 7
+      alternatives:
+        - PowerShell 7
+        - pwsh
+        - PS 7
+      winget id: |
+        Microsoft.PowerShell
+    VS Code:
+      name: |
+        vscode
+      alternatives:
+        - VS code
+        - vs-code
+        - vscode
+      winget id: |
+        Microsoft.VisualStudioCode
+    7 zip:
+      name: |
+        7 zip
+      alternatives:
+        - 7 zip
+        - 7 z
+        - 7z
+      winget id: |
+        7zip.7zip
+    Voidtools everything:
+      name: |
+        Voidtools everything
+      alternatives:
+        - Voidtools everything
+        - Voidtools
+        - everything
+      winget id: |
+        voidtools.Everything
+    WinSCP:
+      name: |
+        WinSCP
+      alternatives:
+        - WinSCP
+        - Win SCP
+        - Win Secure copy
+        - Win Secure-copy
+      winget id: |
+        WinSCP.WinSCP
+  choco:
+    MobaXTerm:
+      name: |
+        MobaXTerm
+      alternatives:
+        - MobaXTerm
+      choco id: |
+        mobaxterm
+    Go:
+      name: |
+        Go
+      alternatives:
+        - golang
+        - go
+      choco id: |
+        golang
+    Notepad++:
+      name: |
+        Notepad++
+      alternatives:
+        - Notepad++
+        - notepadplusplus
+        - notepad-plus-plus
+        - notepadpp
+      choco id: |
+        notepadplusplus
+    SQLite browser:
+      name: |
+        SQLite browser
+      alternatives:
+        - SQLite browser
+        - SQLiteBrowser
+        - Db Browser
+      choco id: |
+        sqlitebrowser
+    Java:
+      name: |
+        Java
+      alternatives:
+        - Java
+        - jdk
+        - JRE
+      choco id: |
+        temurin21     
+  handled:
+    CherryTree:
+      name: |
+        CherryTree
+      alternatives:
+        - CherryTree
+        - Cherry tree
+        - cherry-tree
+    Miniconda:
+      name: |
+        Miniconda
+      alternatives:
+        - Miniconda
+        - Miniconda3
+        - Python
+    SQL Developer:
+      name: |
+        SQL Developer
+      alternatives:
+        - SQL Developer
+        - SQL-Developer
+        - SQLDeveloper
+    Nirsoft:
+      name: |
+        Nirsoft
+      alternatives:
+        - Nirsoft
+        - Nirlauncher
+        - Nirsofer

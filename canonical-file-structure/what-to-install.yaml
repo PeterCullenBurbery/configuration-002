@@ -1,0 +1,7 @@
+install:
+  programs to install:
+    - PowerShell 7
+    - VS code
+    - 7 zip
+    - Voidtools everything
+    - WinSCP
