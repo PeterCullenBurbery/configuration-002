@@ -1,4 +1,4 @@
-module call_installer
+module install_Choco
 
 go 1.24.4
 
