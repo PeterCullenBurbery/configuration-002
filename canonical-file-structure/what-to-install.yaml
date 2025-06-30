@@ -5,3 +5,8 @@ install:
     - 7 zip
     - Voidtools everything
     - WinSCP
+    - MobaXTerm
+    - Go
+    - Notepad++
+    - SQLiteBrowser
+    - Java
