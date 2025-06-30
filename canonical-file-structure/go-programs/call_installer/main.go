@@ -46,7 +46,7 @@ func main() {
 
 	// Paths to programs
 	chocoInstaller := filepath.Join(canonicalDir, "go-programs", "install_Choco", "install_Choco.exe")
-	wingetInstaller := filepath.Join(canonicalDir, "go-programs", "winget_install", "winget_install.exe")
+	// wingetInstaller := filepath.Join(canonicalDir, "go-programs", "winget_install", "winget_install.exe")
 
 	// Step 1: Ensure Choco is installed
 	fmt.Println("🔧 Step 1: Installing Chocolatey prerequisites...")
@@ -57,14 +57,14 @@ func main() {
 		log.Fatalf("❌ Failed to run install_Choco.exe for base choco setup: %v", err)
 	}
 
-	// Step 2: Install Winget packages
-	fmt.Println("📦 Step 2: Installing Winget packages...")
-	if _, err := os.Stat(wingetInstaller); os.IsNotExist(err) {
-		log.Fatalf("❌ winget_install.exe not found at: %s", wingetInstaller)
-	}
-	if err := runExecutable(wingetInstaller, "--what", whatPath, "--install", installPath, "--log", logPath); err != nil {
-		log.Fatalf("❌ winget_install.exe failed: %v", err)
-	}
+	// // Step 2: Install Winget packages
+	// fmt.Println("📦 Step 2: Installing Winget packages...")
+	// if _, err := os.Stat(wingetInstaller); os.IsNotExist(err) {
+	// 	log.Fatalf("❌ winget_install.exe not found at: %s", wingetInstaller)
+	// }
+	// if err := runExecutable(wingetInstaller, "--what", whatPath, "--install", installPath, "--log", logPath); err != nil {
+	// 	log.Fatalf("❌ winget_install.exe failed: %v", err)
+	// }
 
 	// Step 3: Install Choco packages
 	fmt.Println("📦 Step 3: Installing Chocolatey packages...")
