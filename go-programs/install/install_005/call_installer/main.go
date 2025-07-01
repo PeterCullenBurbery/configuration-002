@@ -26,18 +26,16 @@ func main() {
 
 	baseDir := os.Args[1]
 
-	// Compute canonical paths
+	// Compute paths
 	canonicalDir := filepath.Join(baseDir, "canonical-file-structure")
 	whatPath := filepath.Join(canonicalDir, "what-to-install.yaml")
 	installPath := filepath.Join(canonicalDir, "the-following-lines-are-available-to-install.yaml")
 	logsDir := filepath.Join(canonicalDir, "logs")
 
-	// Ensure logs directory exists
 	if err := os.MkdirAll(logsDir, 0755); err != nil {
 		log.Fatalf("❌ Failed to create logs directory: %v", err)
 	}
 
-	// Generate timestamped log file
 	timestamp, err := date_time_functions.Date_time_stamp()
 	if err != nil {
 		log.Fatalf("❌ Could not generate timestamp: %v", err)
@@ -66,7 +64,7 @@ func main() {
 		log.Fatalf("❌ winget_install.exe failed: %v", err)
 	}
 
-	// Step 3: Install Choco packages
+	// Run Choco_install.exe
 	if _, err := os.Stat(chocoPackages); os.IsNotExist(err) {
 		log.Fatalf("❌ Choco_install.exe not found at: %s", chocoPackages)
 	}
